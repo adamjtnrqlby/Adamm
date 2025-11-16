@@ -1,10 +1,6 @@
 Citra Asli (Grayscale) : Persebaran apa adanya, tanpa transformasi.
-
 Citra Negatif : Persebaran intensitas terbalik (mirror), tetapi tidak berubah bentuk.
-
 Citra Logaritmik : Persebaran intensitas dikompresi di daerah terang dan diperluas di daerah gelap, sehingga detail area gelap lebih tampak.
 
-
-Transformasi logaritmik lebih bermanfaat ketika ingin meningkatkan detail pada piksel-piksel yang gelap dan menyebarkan intensitas secara lebih merata.
-
+Transformasi logaritmik lebih bermanfaat ketika ingin meningkatkan detail pada piksel-piksel yang gelap dan menyebarkan intensitas secara lebih merata
 Transformasi negatif hanya berguna untuk membalikkan intensitas (untuk estetika atau kebutuhan khusus), bukan enhancement.
