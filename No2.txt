@@ -1,0 +1,29 @@
+Perbandingan Visual
+
+a. Original (Asli)
+Memiliki detail alami.
+Kontras normal.
+Tidak ada penajaman atau penghalusan tambahan.
+
+b. LPF (Low Pass Filter – Blur)
+
+kernel : (1/9)*[[1,1,1],[1,1,1],[1,1,1]]
+
+Efek visual: 
+Gambar menjadi lebih halus / blur.
+Detail kecil hilang.
+Noise berkurang.
+Perpindahan intensitas lebih lembut.
+
+c. HPF (High Pass Filter – Edge Detection)
+
+kernel : ([[-1,-1,-1]],[-1,8,-1],[-1,-1,-1]])
+
+Efek visual:
+Mayoritas area menjadi sangat gelap.
+Hanya garis tepi (edges) yang tampak terang.
+Citra berubah drastis menjadi "peta tepi".
+Tekstur dan detail halus muncul sebagai titik-titik terang.
+
+hubungan antara domain spasial dan domain frekuensi dari ketiga jenis filter ialah
+Ketiga jenis filter tersebut bekerja di domain spasial menggunakan operasi konvolusi, tetapi efek yang dihasilkan sebenarnya berkaitan langsung dengan perubahan pada domain frekuensi. Low Pass Filter (LPF) menghaluskan citra karena menekan frekuensi tinggi dan hanya melewatkan frekuensi rendah, High Pass Filter (HPF) menonjolkan tepi dengan melewatkan frekuensi tinggi dan memblokir frekuensi rendah, sedangkan Band Pass Filter (BPF) menghasilkan penajaman karena mempertahankan frekuensi menengah–tinggi sambil menurunkan frekuensi rendah. Dengan demikian, setiap filter spasial pada dasarnya mengubah komposisi frekuensi citra sesuai karakteristik masing-masing.
